@@ -4,12 +4,8 @@
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<video bind:this={videoPlayer} controls autoplay>
-    <source bind:this={videoSource} src="" type="video/mp4" />
-</video>
-
-<style>
-    video {
-        max-height: 800px;
-    }
-</style>
+<div id='video-player'>
+    <video bind:this={videoPlayer} controls autoplay>
+        <source bind:this={videoSource} src="" type="video/mp4" />
+    </video>
+</div>

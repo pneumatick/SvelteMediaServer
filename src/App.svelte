@@ -11,6 +11,6 @@
 
 <main>
 	<VideoPlayer />
-	<h1>Watching: {fileNameValue}</h1>
+	<h1><span>Watching: {fileNameValue}</span></h1>
 	<VideoList />
 </main>

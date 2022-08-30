@@ -22,7 +22,6 @@
         });
 </script>
 
-<h2>Videos:</h2>
 <div id="video-list">
     {#each videos as video}
         <a href='/watch?path={video}' on:click={selectVideo}>
@@ -30,25 +29,3 @@
         </a>
     {/each}
 </div>
-
-<style>
-    h2, div {
-        position: absolute;
-        width: 300px;
-        right: 10px;
-        text-align: left;
-    }
-
-    h2 {
-        top: 0;
-        height: 10%;
-        padding-right: 5px;
-    }
-
-    div {
-        height: 90%;
-        top: 55px;
-        overflow: auto;
-        background-color: rgb(170, 163, 163);
-    }
-</style>
