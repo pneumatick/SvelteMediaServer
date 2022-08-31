@@ -13,6 +13,13 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(express.static('./public'));
 
+// Route for serving a background image
+app.get('/backgrounds/:file', (req, res) => {
+    let filePath = path.join(__dirname, `backgrounds/${req.params.file}`);
+    let file = fs.readFileSync(filePath);
+    res.send(file);
+});
+
 // Route for getting the list of videos
 app.get('/videos', (req, res) => {
     let videos = [];

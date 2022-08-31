@@ -1,4 +1,4 @@
-import { fileName} from './stores.js';
+import { fileName } from './stores.js';
 import { videoPlayer, videoSource } from './VideoPlayer.svelte';
 
 // Event listener for selecting a new video from the list
@@ -9,7 +9,8 @@ export function selectVideo(event) {
     videoPlayer.load();
 
     // Change the value of the fileName variable in the store
-    fileName.set(file);
+
+    fileName.set(file.split("/").at(-1));
 
     event.preventDefault();
 }

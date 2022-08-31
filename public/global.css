@@ -4,23 +4,35 @@
 
 body {
 	/*background-color: rgb(37, 37, 37);*/
-	/*background: url(https://i.imgur.com/y3AsI.jpg);*/
-	background: url(https://media1.giphy.com/media/eiMzTkBCN4lGg/giphy.gif);
+	background: url(backgrounds/rain1.gif);
 	background-color: black;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	display: flex;
 }
 
-div {
-	display: inline-block;
+main {
+	width: 100%;
+}
+
+#video-player {
+	justify-content: center;
+}
+
+video, h1 {
+	display: block;
+	margin: 0 auto;
 }
 
 video {
-	max-height: 800px;
-	position: relative;
+	min-width: 640px;
+	min-height: 480px;
+	max-width: 1280px;
+	max-height: 720px;
 }
 
 h1 {
 	color: #ff3e00;
+	text-align: center;
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: 100;
@@ -53,7 +65,7 @@ a:hover {
 	top: 0;
 	right: 0;
 	height: 100%;
-	width: 300px;
+	width: 200px;
 	text-align: left;
 	padding-top: 0;
 	padding-left: 5px;
