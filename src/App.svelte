@@ -10,7 +10,9 @@
 </script>
 
 <main>
-	<VideoPlayer />
-	<h1><span>Watching: {fileNameValue}</span></h1>
+	<div class="video-container">
+		<VideoPlayer />
+		<h1><span>Watching: {fileNameValue}</span></h1>
+	</div>
 	<VideoList />
 </main>

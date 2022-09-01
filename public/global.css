@@ -7,27 +7,45 @@ body {
 	background: url(backgrounds/rain1.gif);
 	background-color: black;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	display: flex;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
 }
 
 main {
-	width: 100%;
-}
-
-#video-player {
+	display: flex;
+	align-items: center;
 	justify-content: center;
+	width: 100%;
+	height: 100%;
 }
 
-video, h1 {
+/*#video-player {
+	justify-content: center;
+}*/
+
+/*video, h1 {
 	display: block;
 	margin: 0 auto;
+}*/
+
+.video-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 video {
 	min-width: 640px;
 	min-height: 480px;
-	max-width: 1280px;
-	max-height: 720px;
+	max-width: auto;
+	max-height: auto;
 }
 
 h1 {
